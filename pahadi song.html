@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>म्यार पहाड़</title>
+
+    <link rel="stylesheet" href="pahadi.css">
+</head>
+
+<body>
+
+    <!-- LIVE VIDEO BACKGROUND -->
+
+    <video
+        class="background-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto">
+
+        <source src="hahaha.mp4" type="video/mp4">
+
+    </video>
+
+
+    <!-- OVERLAY -->
+
+    <div class="overlay"></div>
+
+
+    <!-- TITLE -->
+
+    <div class="title">
+
+        <h1>म्यार पहाड़</h1>
+
+        <p>
+            पाहाड़ी संस्कृति | पहाड़ी जीवन
+        </p>
+
+    </div>
+
+
+    <!-- DATE -->
+
+    <div class="date">
+
+        <span id="date">
+            Loading...
+        </span>
+
+    </div>
+
+
+    <!-- MUSIC PLAYER -->
+
+    <div class="music-player">
+
+
+        <!-- SONG INFORMATION -->
+
+        <div class="song-info">
+
+            <div class="album">
+                🏔️
+            </div>
+
+            <div class="song-text">
+
+                <h2 id="song-title">
+                    Pahadi Song
+                </h2>
+
+                <p id="artist">
+                    Pahadi Folk Music
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTROLS -->
+
+        <div class="controls">
+
+            <button
+                id="previous"
+                type="button">
+                ⏮
+            </button>
+
+            <button
+                id="play"
+                type="button">
+                ▶
+            </button>
+
+            <button
+                id="next"
+                type="button">
+                ⏭
+            </button>
+
+        </div>
+
+
+        <!-- PROGRESS -->
+
+        <div class="progress">
+
+            <input
+                type="range"
+                id="progress-bar"
+                min="0"
+                max="100"
+                value="0">
+
+            <div class="time">
+
+                <span id="current-time">
+                    0:00
+                </span>
+
+                <span id="duration">
+                    0:00
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- VOLUME -->
+
+        <div class="volume">
+
+            <span>🔊</span>
+
+            <input
+                type="range"
+                id="volume"
+                min="0"
+                max="1"
+                step="0.01"
+                value="0.8">
+
+        </div>
+
+    </div>
+
+
+    <!-- EXISTING MP3 -->
+
+    <audio
+        id="audio"
+        src="songs/songs1.mp3">
+    </audio>
+
+
+    <!-- YOUTUBE PLAYER -->
+
+    <div id="youtube-player"></div>
+
+
+    <!-- YOUTUBE API -->
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+
+    <!-- MAIN JS -->
+
+    <script src="pahadi.js"></script>
+
+</body>
+
+</html>
